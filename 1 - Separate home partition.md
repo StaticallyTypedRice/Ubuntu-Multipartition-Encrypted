@@ -30,12 +30,6 @@ mkdir /homebackup
 cp -a /home /homebackup
 ```
 
-Copy the existing home folder to the new partition:
-
-```bash
-cp -a /home /mnt/home
-```
-
 Mount the new partition to the location of the home partition:
 
 ```bash
@@ -72,10 +66,6 @@ Create user folders for the existing users on your system:
 mkdir /home/user
 ```
 
-Reboot the system:
-
-```bash
-init 6
-```
+**Do not reboot the system at this time, otherwise you will not be able to log in!**
 
 **[Previous Step](./0%20-%20Initial%20setup.md)** || **[Next Step]()**
