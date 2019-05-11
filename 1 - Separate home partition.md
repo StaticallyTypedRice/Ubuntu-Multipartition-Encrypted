@@ -26,6 +26,7 @@ Where `sdb1` is your new partition. Change this as necessary, using `lsblk` to s
 Back up the home folder (preferably make a second backup to a removable drive or the cloud):
 
 ```bash
+mkdir /homebackup
 cp -a /home /homebackup
 ```
 
