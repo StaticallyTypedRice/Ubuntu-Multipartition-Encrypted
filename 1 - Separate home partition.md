@@ -63,11 +63,6 @@ Paste the following line, changing the UUID to what blkid displayed:
 UUID=(partition-uuid) /home ext4 defaults 0 2
 ```
 
-Create user folders for the existing users on your system:
-```bash
-mkdir /home/user
-```
-
 **Do not reboot the system at this time, otherwise you will not be able to log in!**
 
 **[Previous Step](./0%20-%20Initial%20setup.md)** || **[Next Step](./1%20-%20Encrypt%20home%20partition.md)**

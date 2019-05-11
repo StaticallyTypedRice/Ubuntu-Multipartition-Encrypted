@@ -43,6 +43,14 @@ And add this line:
 /dev/mapper/chome /home ext4 nodev,nosuid,noatime 0 2
 ```
 
+Restore the backed up home data:
+
+```bash
+mount /home
+cp -a /homebackup/* /home
+rm -rf /homebackup
+```
+
 Reboot the system:
 
 ```bash
