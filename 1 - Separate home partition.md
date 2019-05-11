@@ -1,6 +1,6 @@
 # Create a separate home partition
 
-Use a partition tool to create an ext4 partition on your drive of choice
+Use a partition tool to create an ext4 partition on your drive of choice.
 
 Log into root:
 
