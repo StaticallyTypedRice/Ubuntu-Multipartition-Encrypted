@@ -8,12 +8,14 @@ Log into root:
 sudo su
 ```
 
+We will assume that `sdb1` is your home partition. Change this as necessary, using `lsblk` to see the partitions.
+
 Encrypt the home partition.
 
 ```bash
 umount /home
-cryptsetup -h sha256 -c aes-xts-plain64 -s 512 luksFormat /dev/sda5
-cryptsetup luksOpen /dev/sda5 chome
+cryptsetup -h sha256 -c aes-xts-plain64 -s 512 luksFormat /dev/sdb1
+cryptsetup luksOpen /dev/sdb1 chome
 mkfs.ext4 -m 0 /dev/mapper/chome
 ```
 
@@ -26,7 +28,7 @@ nano /etc/crypttab
 And add this line:
 
 ```conf
-chome /dev/sda5 none luks,timeout=30
+chome /dev/sdb1 none luks,timeout=30
 ```
 
 Open the fstab file:
