@@ -1,5 +1,7 @@
 # Create a separate home partition
 
+([Source](https://askubuntu.com/a/50539))
+
 Use a partition tool to create an ext4 partition on your drive of choice.
 
 Log into root:
@@ -68,4 +70,4 @@ mkdir /home/user
 
 **Do not reboot the system at this time, otherwise you will not be able to log in!**
 
-**[Previous Step](./0%20-%20Initial%20setup.md)** || **[Next Step]()**
+**[Previous Step](./0%20-%20Initial%20setup.md)** || **[Next Step](./1%20-%20Encrypt%20home%20partition.md)**
