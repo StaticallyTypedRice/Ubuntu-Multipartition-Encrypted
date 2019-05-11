@@ -26,13 +26,13 @@ Where `sdb1` is your new partition. Change this as necessary, using `lsblk` to s
 Back up the home folder (preferably make a second backup to a removable drive or the cloud):
 
 ```bash
-cp -r /home /homebackup
+cp -a /home /homebackup
 ```
 
 Copy the existing home folder to the new partition:
 
 ```bash
-cp -r /home /mnt/home
+cp -a /home /mnt/home
 ```
 
 Mount the new partition to the location of the home partition:
